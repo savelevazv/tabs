@@ -22,19 +22,19 @@ export const Tabs = () => {
     return (
         <>
             <div className="tabs--container">
-            <div className="tabs">
-                <div className="tabs--list">
-                    {tabsItems.map((item, i) => {
-                        return (
-                            <button className={`tab--title ${index == i ? 'active' : ''}`} onClick={() => setIndex(i)}>{item.title}</button>
-                        )
-                    })}
-                </div>
-                <div className="tab--content">
-                    {tabsItems[index].content}
+                <div className="tabs">
+                    <div className="tabs--list">
+                        {tabsItems.map((item, i) => {
+                            return (
+                                <button className={`tab--title ${index == i ? 'active' : ''}`} onClick={() => setIndex(i)}>{item.title}</button>
+                            )
+                        })}
+                    </div>
+                    <div className="tab--content">
+                        {tabsItems[index].content}
+                    </div>
                 </div>
             </div>
-        </div>
         </>
     )
 }
