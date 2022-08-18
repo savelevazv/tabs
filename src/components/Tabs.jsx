@@ -20,7 +20,8 @@ export const Tabs = () => {
     const [index, setIndex] = useState(0)
 
     return (
-        <div className="tabs--container">
+        <>
+            <div className="tabs--container">
             <div className="tabs">
                 <div className="tabs--list">
                     {tabsItems.map((item, i) => {
@@ -34,5 +35,6 @@ export const Tabs = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
